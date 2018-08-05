@@ -13,9 +13,14 @@
 		7816FBAD21158B4800E06DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7816FBAC21158B4800E06DC0 /* Assets.xcassets */; };
 		7816FBB021158B4800E06DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7816FBAE21158B4800E06DC0 /* LaunchScreen.storyboard */; };
 		7816FBB321158B4800E06DC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7816FBB221158B4800E06DC0 /* main.m */; };
+		7816FBBC21158CEE00E06DC0 /* MCHomeworkAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7816FBBB21158CEE00E06DC0 /* MCHomeworkAudioView.m */; };
+		7816FBBF21158F6800E06DC0 /* JXAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7816FBBE21158F6800E06DC0 /* JXAudioPlayer.m */; };
+		7816FBD42115A0DB00E06DC0 /* JXAudioPlayer+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = 7816FBD32115A0DB00E06DC0 /* JXAudioPlayer+Time.m */; };
+		7816FBD72116911000E06DC0 /* CCAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7816FBD62116911000E06DC0 /* CCAudioPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		780DFC8C21172AB1001A0CA9 /* JXAudioPlayerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXAudioPlayerHeader.h; sourceTree = "<group>"; };
 		7816FBA021158B4600E06DC0 /* JXAudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXAudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7816FBA321158B4600E06DC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7816FBA421158B4600E06DC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +31,15 @@
 		7816FBAF21158B4800E06DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7816FBB121158B4800E06DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7816FBB221158B4800E06DC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7816FBBA21158CEE00E06DC0 /* MCHomeworkAudioView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCHomeworkAudioView.h; sourceTree = "<group>"; };
+		7816FBBB21158CEE00E06DC0 /* MCHomeworkAudioView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCHomeworkAudioView.m; sourceTree = "<group>"; };
+		7816FBBD21158F6800E06DC0 /* JXAudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXAudioPlayer.h; sourceTree = "<group>"; };
+		7816FBBE21158F6800E06DC0 /* JXAudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXAudioPlayer.m; sourceTree = "<group>"; };
+		7816FBD021159F3B00E06DC0 /* JXAudioPlayerDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXAudioPlayerDefines.h; sourceTree = "<group>"; };
+		7816FBD22115A0DB00E06DC0 /* JXAudioPlayer+Time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JXAudioPlayer+Time.h"; sourceTree = "<group>"; };
+		7816FBD32115A0DB00E06DC0 /* JXAudioPlayer+Time.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JXAudioPlayer+Time.m"; sourceTree = "<group>"; };
+		7816FBD52116911000E06DC0 /* CCAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAudioPlayer.h; sourceTree = "<group>"; };
+		7816FBD62116911000E06DC0 /* CCAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAudioPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +72,11 @@
 		7816FBA221158B4600E06DC0 /* JXAudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				7816FBB921158B4D00E06DC0 /* JXAudioPlayer */,
 				7816FBA321158B4600E06DC0 /* AppDelegate.h */,
 				7816FBA421158B4600E06DC0 /* AppDelegate.m */,
+				7816FBD52116911000E06DC0 /* CCAudioPlayer.h */,
+				7816FBD62116911000E06DC0 /* CCAudioPlayer.m */,
 				7816FBA621158B4600E06DC0 /* ViewController.h */,
 				7816FBA721158B4600E06DC0 /* ViewController.m */,
 				7816FBA921158B4600E06DC0 /* Main.storyboard */,
@@ -67,8 +84,39 @@
 				7816FBAE21158B4800E06DC0 /* LaunchScreen.storyboard */,
 				7816FBB121158B4800E06DC0 /* Info.plist */,
 				7816FBB221158B4800E06DC0 /* main.m */,
+				7816FBBA21158CEE00E06DC0 /* MCHomeworkAudioView.h */,
+				7816FBBB21158CEE00E06DC0 /* MCHomeworkAudioView.m */,
 			);
 			path = JXAudioPlayer;
+			sourceTree = "<group>";
+		};
+		7816FBB921158B4D00E06DC0 /* JXAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				780DFC8C21172AB1001A0CA9 /* JXAudioPlayerHeader.h */,
+				7816FBD021159F3B00E06DC0 /* JXAudioPlayerDefines.h */,
+				7816FBCE21159EF800E06DC0 /* Category */,
+				7816FBCD21159EDA00E06DC0 /* Components */,
+			);
+			path = JXAudioPlayer;
+			sourceTree = "<group>";
+		};
+		7816FBCD21159EDA00E06DC0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7816FBBD21158F6800E06DC0 /* JXAudioPlayer.h */,
+				7816FBBE21158F6800E06DC0 /* JXAudioPlayer.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7816FBCE21159EF800E06DC0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7816FBD22115A0DB00E06DC0 /* JXAudioPlayer+Time.h */,
+				7816FBD32115A0DB00E06DC0 /* JXAudioPlayer+Time.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7816FBBF21158F6800E06DC0 /* JXAudioPlayer.m in Sources */,
 				7816FBA821158B4600E06DC0 /* ViewController.m in Sources */,
+				7816FBBC21158CEE00E06DC0 /* MCHomeworkAudioView.m in Sources */,
 				7816FBB321158B4800E06DC0 /* main.m in Sources */,
+				7816FBD42115A0DB00E06DC0 /* JXAudioPlayer+Time.m in Sources */,
+				7816FBD72116911000E06DC0 /* CCAudioPlayer.m in Sources */,
 				7816FBA521158B4600E06DC0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

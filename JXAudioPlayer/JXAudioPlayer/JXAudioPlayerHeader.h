@@ -9,5 +9,10 @@
 #ifndef JXAudioPlayerHeader_h
 #define JXAudioPlayerHeader_h
 
+#import "JXAudioPlayer.h"
+#import "JXAudioPlayer+Time.h"
+
+#import "JXAudioPlayerDefines.h"
+
 
 #endif /* JXAudioPlayerHeader_h */

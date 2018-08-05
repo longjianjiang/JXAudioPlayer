@@ -11,7 +11,7 @@
  */
 
 #import "CCAudioPlayer.h"
-
+@import UIKit;
 @import AVFoundation;
 
 typedef NS_ENUM(NSInteger, CCAudioPlayerPauseReason) {
